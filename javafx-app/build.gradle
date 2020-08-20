@@ -13,32 +13,13 @@ plugins {
     // Apply the application plugin to add support for building a CLI application.
     id 'application'
 
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-}
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-        resources {
-            srcDir 'src'
-        }
-    }
-    test {
-        java {
-            srcDir 'test'
-        }
-        resources {
-            srcDir 'test'
-        }
-    }
 }
 
 javafx {
@@ -56,12 +37,12 @@ dependencies {
     // Use TestFX API
     testImplementation 'org.testfx:testfx-core:4.0.16-alpha'
 
-    testImplementation 'org.testfx:testfx-junit5:4.0.16-alpha'
+    testCompile 'org.testfx:testfx-junit5:4.0.16-alpha'
 }
 
 application {
     // Define the main class for the application.
-    mainClassName = 'javafxapp.App'
+    mainClassName = 'javafxapp/javafxapp.App'
 }
 
 test {

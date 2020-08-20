@@ -5,5 +5,5 @@ module javafxapp {
 	
 	exports javafxapp;
 
-	opens javafxapp to javafx.fxml;
+    opens javafxapp to javafx.fxml;
 }
