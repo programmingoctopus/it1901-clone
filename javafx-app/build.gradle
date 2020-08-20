@@ -37,7 +37,7 @@ dependencies {
     // Use TestFX API
     testImplementation 'org.testfx:testfx-core:4.0.16-alpha'
 
-    testCompile 'org.testfx:testfx-junit5:4.0.16-alpha'
+    testImplementation 'org.testfx:testfx-junit5:4.0.16-alpha'
 }
 
 application {
